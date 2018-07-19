@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>로그인</title>
+  </head>
+
+  <script>
+    function test()
+    {
+      var Id_value = document.getElementById("user_ID").value;
+      if (Id_value == "qwe")
+      {
+        alert("사용 불가능함");
+      }
+      else
+      {
+        alert("굿");
+      }
+    }
+  </script>
+
+  <body>
+
+      <table>
+          <tr>
+            <th>ID:</th>
+            <td><input type = "text" name = "user_ID"/></td>
+            <td><input type = "button" value = "중복확인" onclick = "test()">
+        </tr>
+        <tr>
+          <th>PW:</th>
+          <td><input type = "password" name = "user_password"/></td>
+        </tr>
+        <tr>
+          <th>PW확인:</th>
+          <td><input type = "password" name = "user_password2"/></td>
+        </tr>
+        <tr>
+          <th>이메일:</th>
+          <td><input type = "text" name = "user_email"/></td>
+        </tr>
+        <tr>
+          <th>핸드폰:</th>
+          <td><input type = "int" name = "user_phone"/></td>
+        </tr>
+
+
+  </body>
+</html>
