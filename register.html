@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel = "stylesheet" href = "main.css">
+    <title>Register Page</title>
+  </head>
+
+  <script>
+    function test_ID()
+    {
+      var Id_value = document.getElementById("I_user_ID").value;
+      if (Id_value == "qwe")
+      {
+        alert("사용 불가능함");
+      }
+      else
+      {
+        alert("사용 가능함");
+      }
+    }
+    function test_PW()
+    {
+      if (document.getElementById("I_user_passowrd").value == document.getElementById("I_user_password2").value)
+      {
+        document.getElementById("para").innerHTML = "일치"
+      }
+      else {
+        {
+          document.getElementById("para").innerHTML = "불일치"
+        }
+      }
+    }
+  </script>
+
+  <body>
+    <div class = "overlay">
+      <div class = "register_table">
+        <form style = "margin:30px;">
+      <table>
+          <tr>
+            <th>ID:</th>
+            <td><input type = "text" name = "N_user_ID" id = "I_user_ID" style = "text_align; width:200px; height:30px;"></td>
+            <td><input type = "button" value = "중복확인" onclick = "test_ID()">
+        </tr>
+        <tr>
+          <th>PW:</th>
+          <td><input type = "password" name = "N_user_password" id = "I_user_password" style = "text_align; width:200px; height:30px;"></td>
+        </tr>
+        <tr>
+          <th>PW확인:</th>
+          <td><input onblur = "test_PW()" type = "password" id = "I_user_password2" style = "text_align; width:200px; height:30px;"></td>
+          <td><id="para"></td>
+        </tr>
+        <tr>
+          <th>이메일:</th>
+          <td><input type = "text" name = "N_user_email" style = "text_align; width:200px; height:30px;"></td>
+        </tr>
+        <tr>
+          <th>핸드폰:</th>
+          <td><input type = "int" name = "N_user_phone" style = "text_align; width:200px; height:30px;"></td>
+        </tr>
+      </table>
+      <table>
+        <tr>
+
+          <td><button type = "button" onclick = "location.href = 'login.html'" class = "btn">취소</td>
+          <td><input type=button style="width: 60pt; height: 40pt" value="회원가입" style = "text_align; width:200px; height:30px;"></td>
+        </tr>
+      </table>
+    </form>
+  </div>
+</div>
+
+
+
+  </body>
+</html>

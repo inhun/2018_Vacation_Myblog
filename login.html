@@ -2,48 +2,49 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>로그인</title>
-  </head>
+    <link rel = "stylesheet" href = "main.css">
+    <title>Login Page</title>
 
+  </head>
   <script>
-    function test()
+    function login()
     {
-      var Id_value = document.getElementById("user_ID").value;
-      if (Id_value == "qwe")
+      if (document.getElementById("I_ID").value = "inhun" and document.getElementById("I_PW").value = "1234")
       {
-        alert("사용 불가능함");
-      }
-      else
-      {
-        alert("굿");
+        <a href = "main.html">
       }
     }
   </script>
-
   <body>
+    <div class = "overlay">
+      <div class = "login_table">
+        <form style = "margin:30px;">
+          Member Login
+          <table>
+            <tr>
+              <td><input type = "text" name = "N_ID" id = "I_ID" placeholder = "아이디" style = "text_align; width:250px; height:50px;"></td>
+            </tr>
+            <tr>
+              <br>
+              <td><input type = "password" name = "N_PW" id = "I_PW" placeholder = "비밀번호" style = "text_align; width:250px; height:50px;"></td>
+            </tr>
+            <tr>
+              <td><input type = "checkbox" name = "remember_id" value = "remember_id">아이디 저장</td>
+            </tr>
+          </table>
 
-      <table>
-          <tr>
-            <th>ID:</th>
-            <td><input type = "text" name = "user_ID"/></td>
-            <td><input type = "button" value = "중복확인" onclick = "test()">
-        </tr>
-        <tr>
-          <th>PW:</th>
-          <td><input type = "password" name = "user_password"/></td>
-        </tr>
-        <tr>
-          <th>PW확인:</th>
-          <td><input type = "password" name = "user_password2"/></td>
-        </tr>
-        <tr>
-          <th>이메일:</th>
-          <td><input type = "text" name = "user_email"/></td>
-        </tr>
-        <tr>
-          <th>핸드폰:</th>
-          <td><input type = "int" name = "user_phone"/></td>
-        </tr>
+            <input type = "button" onclick = "login();"   class = "btn" type = "submit" value = "로그인">
+          <button type = "button" onclick = "location.href = 'register.html'" class = "btn">회원가입</button>
+
+      </form>
+    </div>
+  </div>
+</body>
+</html>
+
+
+
+
 
 
   </body>
