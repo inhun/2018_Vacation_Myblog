@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <link rel = "stylesheet" href = "main.css">
     <title>Register Page</title>
+
   </head>
 
   <script>
@@ -36,7 +37,7 @@
   <body>
     <div class = "overlay">
       <div class = "register_table">
-        <form style = "margin:30px;">
+        <form name ="f" style = "margin:30px;" method = "POST" action = "./api/add_user.php">
       <table>
           <tr>
             <th>ID:</th>
@@ -49,7 +50,7 @@
         </tr>
         <tr>
           <th>PW확인:</th>
-          <td><input onblur = "test_PW()" type = "password" id = "I_user_password2" style = "text_align; width:200px; height:30px;"></td>
+          <td><input onblur = "test_PW()" type = "password" name = "N_user_password2" id = "I_user_password2" style = "text_align; width:200px; height:30px;"></td>
           <td><id="para"></td>
         </tr>
         <tr>
@@ -65,7 +66,7 @@
         <tr>
 
           <td><button type = "button" onclick = "location.href = 'login.html'" class = "btn">취소</td>
-          <td><input type=button style="width: 60pt; height: 40pt" value="회원가입" style = "text_align; width:200px; height:30px;"></td>
+          <td><input type="submit" style="width: 60pt; height: 40pt" value="회원가입" style = "text_align; width:200px; height:30px;"></td>
         </tr>
       </table>
     </form>

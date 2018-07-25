@@ -9,16 +9,17 @@
   <script>
     function login()
     {
-      if (document.getElementById("I_ID").value = "inhun" and document.getElementById("I_PW").value = "1234")
+      if (document.getElementById("I_ID").value = "inhun" && document.getElementById("I_PW").value = "1234")
       {
-        <a href = "main.html">
+        location.href = 'main_page.html'
       }
     }
   </script>
   <body>
     <div class = "overlay">
       <div class = "login_table">
-        <form style = "margin:30px;">
+        <form style = "margin:30px" method = 'POST' action = './api/login_check.php'>
+
           Member Login
           <table>
             <tr>
@@ -33,7 +34,7 @@
             </tr>
           </table>
 
-            <input type = "button" onclick = "login();"   class = "btn" type = "submit" value = "로그인">
+            <input onclick = "login();"   class = "btn" type = "submit" value = "로그인">
           <button type = "button" onclick = "location.href = 'register.html'" class = "btn">회원가입</button>
 
       </form>
